@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Show clang-format version
+        run: clang-format --version
       - uses: RafikFarhad/clang-format-github-action@v3
         with:
           # sources 和 excludes 最终生成的find查找文件的命令大概是这样的
