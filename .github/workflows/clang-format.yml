@@ -2,6 +2,7 @@ name: Clang Format Checker
 on:
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 jobs:
   clang-format-checking:
     runs-on: ubuntu-latest
